@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo-Mobile-Bank</title>
+
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="">
+    <div class="max-w-lg mx-auto Login bg-base-200 min-h-screen">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="text-center lg:text-left"></div>
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label font-bold text-black">Phone Number</label>
+              <!-- Input Login Number -->
+              <input
+                id="input-login-number"
+                type="number"
+                class="input"
+                placeholder="Enter Number"
+              />
+              <label class="label font-bold text-black">PIN</label>
+              <!-- Input Login Pin  -->
+              <input
+                id="input-login-Pin"
+                type="password"
+                class="input"
+                placeholder="Enter 4 digit PIN"
+              />
+              <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Java/Login.js"></script>
+  </body>
+</html>
